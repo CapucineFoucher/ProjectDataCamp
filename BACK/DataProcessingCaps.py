@@ -7,13 +7,13 @@ import numpy as np
 
 
 current_dir = os.getcwd()
-df_val = pd.read_csv(current_dir + 'data/Evaluation_Set/RFMiD_Validation_Labels.csv')
+df_val = pd.read_csv(current_dir + '/data/Evaluation_Set/RFMiD_Validation_Labels.csv')
 
 
 
-evalDir = os.path.join(current_dir, 'data/Evaluation_Set')
-trainDir = os.path.join(current_dir, 'data/Training_Set')
-testDir = os.path.join(current_dir, 'data/Test_Set')
+evalDir = os.path.join(current_dir, '/data/Evaluation_Set')
+trainDir = os.path.join(current_dir, '/data/Training_Set')
+testDir = os.path.join(current_dir, '/data/Test_Set')
 
 
 
