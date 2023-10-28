@@ -1,6 +1,5 @@
 import pandas as pd
 import os
-from PIL import Image
 import tensorflow as tf
 from tensorflow.keras import layers, models
 import matplotlib.pyplot as plt
