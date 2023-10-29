@@ -1,16 +1,17 @@
 import pandas as pd
 import os
-"""import tensorflow as tf
-from tensorflow.keras import layers, models"""
+import tensorflow as tf
+from tensorflow.keras import layers, models
+from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 
 
 current_dir = os.getcwd()
 
-evalDir = os.path.join(current_dir, 'data/Evaluation_Set')
-trainDir = os.path.join(current_dir, 'data/Training_Set')
-testDir = os.path.join(current_dir, 'data/Test_Set')
+evalDir = os.path.join(current_dir, 'BACK/data/Evaluation_Set')
+trainDir = os.path.join(current_dir, 'BACK/data/Training_Set')
+testDir = os.path.join(current_dir, 'BACK/data/Test_Set')
 
 # Define data directories 
 df_test = pd.read_csv(testDir+'/RFMiD_Testing_Labels.csv')
@@ -26,7 +27,7 @@ images_test = []
 images_train = []
 images_val = []
 # Load and store all images
-"""for ID in df_test['ID']:
+for ID in df_test['ID']:
     image_test_path = os.path.join(testDir+'/Test', f'{ID}.png')
     image = Image.open(image_test_path)
     images_test.append(image)
@@ -52,4 +53,3 @@ plt.show()
 plt.imshow(images_val[image_index-1])
 plt.show()
 
-"""
