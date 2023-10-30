@@ -1,13 +1,6 @@
-/data
+data/Evaluation_Set/Validation
+data/Test_Set/Test
+data/Training_Set/Training
+
 
 /venv
-
-
-/BACK/data
-
-
-/BACK/venv
-
-/FRONT/data
-
-/FRONT/venv
