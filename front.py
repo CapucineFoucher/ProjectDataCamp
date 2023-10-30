@@ -5,12 +5,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from userTest import createAndSave
+import os
 
-createAndSave()
+# Create or load the model
+def create_or_load_model():
+    if os.path.exists('model.keras'):
+        model = Model()
+        model.load_model()
+    else:
+        createAndSave()
+        model = Model()
+        model.load_model()
+    return model
 
-# Create an instance of the model
-model = Model()
-model.load_model()
+create_or_load_model()
 
 
 # Define page functions
